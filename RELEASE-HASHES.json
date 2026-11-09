@@ -1,0 +1,36 @@
+[
+  {
+    "file": "CU-Avatars-Legacy-0.1.1.zip",
+    "bytes": 21082183,
+    "sha256": "7a96264b59ea0a634b8c44c54456cc8968c464c17a4136cc4fd6a7bec38a0159",
+    "plugins": [
+      {
+        "path": "CU Avatars/Game folder/CUAvatars.asi",
+        "sha256": "b02f3f7d82672a3f4e989e7c3ad4d973df8e5e9cea018318763960bbc932690c"
+      }
+    ]
+  },
+  {
+    "file": "CU-Avatars-Enhanced-0.1.1-preview.zip",
+    "bytes": 20865458,
+    "sha256": "598c580b1c2f1d4bcdd91d53ed788da45ae905b4218a02936315e7a5e1ef68c4",
+    "plugins": [
+      {
+        "path": "CU Avatars Enhanced/Game folder/CUAvatars.asi",
+        "sha256": "de0f0b4e71a10578f4c9a7e7ed7d0a7de7ffdc5cb068fbaf3817f4c8a82214b7"
+      }
+    ]
+  },
+  {
+    "file": "CU-Avatars-0.1.1-alpha-Source.zip",
+    "bytes": 68302,
+    "sha256": "272efa47ba5abd34c02fb486a4886e31fa16ea39988a86d9e42be2f911221e6c",
+    "plugins": []
+  },
+  {
+    "file": "CU-Avatars-Enhanced-0.1.1-preview-Source.zip",
+    "bytes": 63922,
+    "sha256": "cd5aa18c9d8961e2702f5582a30bf25b2b43690c11bfb9df66b223701bc2b830",
+    "plugins": []
+  }
+]

@@ -1,0 +1,63 @@
+ROAMING VISUAL TESTS - CU AVATARS 0.1.1-alpha
+
+LIVE STATUS: ALL ROWS PENDING. Repeat every row for Expie, Milky AND Dune.
+Do not mark a row passed solely because the offline skeleton check passed.
+Record game build, other mods, avatar, vehicle/weapon model and camera view for
+any issue. Start on a clean Legacy mod profile without the private movie mods.
+
+1. Ground movement: stand, walk, run, sprint, stop, turn, stairs and slopes.
+   Feet should plant correctly; no stretching, body collapse or stuck poses.
+2. Jump, vault, climb, ladders, falling/ragdoll and getting back up.
+   Hands/feet should follow the contact surface; custom loops must not freeze body.
+3. Cars: compact (Panto), sedan (Tailgater), sports (Comet), supercar (Adder),
+   convertible (Sentinel), SUV (Granger), low car (Banshee), van (Speedo),
+   pickup (Bison), truck (Phantom). Enter/exit both sides, steer fully both ways,
+   reverse, driver/passenger/rear seats. Check hands, feet, seat and head clearance.
+4. Motorcycles: sports (Bati 801), cruiser (Daemon), dirt (Sanchez), scooter
+   (Faggio), quad (Blazer). Mount/dismount, idle, steer/lean, accelerate/brake.
+   Hands should meet handlebars and feet meet pegs without twisted arms.
+5. Bicycles: BMX, Scorcher and race bike (Tri-Cycles). Pedal standing/seated,
+   steer, jump, mount/dismount; check bars and pedals throughout their motion.
+6. Aircraft/watercraft: helicopter (Frogger), plane (Dodo), boat (Dinghy),
+   jet ski (Seashark). Check controls, seating, entry/exit and camera clearance.
+7. One-handed weapons: Pistol, Combat Pistol, Micro SMG and Stun Gun.
+   Holster/draw, idle carry, aim, fire, reload; inspect right hand from both sides.
+8. Two-handed weapons: SMG, Assault Rifle, Carbine Rifle, Pump Shotgun,
+   Sniper Rifle and Combat MG. Test stock and extended/suppressed variants;
+   carry, aim/fire, recoil, reload while standing/walking/crouched/in cover.
+   Inspect right trigger hand AND left support hand, wrists and elbows.
+9. Heavy weapons/tools: RPG, Grenade Launcher, Minigun, Jerry Can and extinguisher.
+   Check distinct grip points, carrying, firing/pouring and switching weapons.
+10. Melee/throwables: fists, Knife, Baseball Bat, Grenade and Sticky Bomb.
+    Swing, block, strike and throw without limb distortion or stuck props.
+11. Vehicle weapons: pistol/Micro SMG drive-by and passenger aiming in a car
+    and on a motorcycle. Check hands when switching between controls and gun.
+12. Swim on surface/underwater, dive, climb out; parachute equip/deploy/land.
+    Check limbs/straps and whether the backpack intersects the body/tail.
+13. Phone: draw, keep open for30seconds, navigate contacts/messages, make/end
+    a call, put away. Repeat walking/seated and with all3avatars. The draw must
+    not repeat, and F7/ambient speech must not interrupt it. After put-away and
+    a short quiet interval, automatic blink/tail sway should resume.
+    Repeat interrupts with reload, aim/fire, weapon swaps, cover, melee, vault,
+    swim, parachute, entry/exit, ambient gestures and another scripted animation.
+    Face must follow head; tail animation must not deform arms/spine/legs.
+14. Repeat representative aim/driving in third person and first person.
+    Large heads/muzzles/tails and custom hand shapes may need camera-specific
+    fixes; first-person clearance has not been validated in this alpha.
+15. F5 switch on foot/in driver and passenger seats. F6 restore all three
+    protagonists with outfit, props, ammo, clips, tints/components and parachute.
+    Restore protagonist before saving/reloading, then select an avatar again.
+    Check death/respawn and key rebinding.
+
+VISUAL PASS CRITERIA
+No visible floating grips, severe hand/prop separation, inverted joints, twisted
+limbs, broken feet, blocked camera, persistent facial errors or body animation
+overrides during the tested action. Record smaller avatar/seat/tail clipping too;
+an unusual body shape can need a targeted correction for an individual vehicle.
+Do not advertise every vehicle/weapon as verified based on representative tests.
+
+OFFLINE RESULTS
+54 sampled native body animations; 58,400 hand/prop/foot/toe position comparisons
+per avatar. Maximum anchor difference below 0.002 mm. These are native frame
+alignment tests, not rendered measurements of fingers, props or car interiors.
+Face/tail clips contain only custom bones; no native body animation tracks.

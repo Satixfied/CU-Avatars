@@ -1,0 +1,25 @@
+{
+  "edition": "Enhanced",
+  "status": "preview; Enhanced1158.16 startup and prologue switching user-confirmed",
+  "converted_resources": 9,
+  "unchanged_shared_resources": 6,
+  "archive_readback": "15 resources + 3 metadata files match",
+  "policies": "four avatar policy suites passed",
+  "installation_xml_helper": "insertion/removal, preservation, duplicate handling, overwrite and invalid-structure rejection passed",
+  "legacy_unchanged": {
+    "work\\cu-avatars\\dlc.rpf": "2214a40a6c3e37ddc862c1eee98d9bfd340f64d68fbc4f11b3590cc5dd5cff50",
+    "work\\cu-avatars\\build\\CUAvatars.asi": "b02f3f7d82672a3f4e989e7c3ad4d973df8e5e9cea018318763960bbc932690c",
+    "work\\cu-avatars\\creator\\build\\CUPhotoStage.asi": "f1625f637314954e7a57eae741653c03642303cfb81cba092117024945fdaac8"
+  },
+  "runtime": "x64, Enhanced executable gate; shared ScriptHookV native implementation",
+  "live_checks_passed": [
+    "startup after MetaDataStore 3200 to 4000",
+    "native prologue character switching"
+  ],
+  "live_checks_pending": [
+    "F5 avatar selection",
+    "all three avatar visuals",
+    "phone, weapons, vehicles and respawn"
+  ],
+  "required_metadata_minimum": 4000
+}

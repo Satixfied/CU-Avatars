@@ -1,0 +1,437 @@
+"""Author the beginner guides. Text-only docs; never touches a game installation."""
+from pathlib import Path
+W=Path(__file__).resolve().parent.parent
+intro='''CU AVATARS - {edition}: BEGINNER INSTALLATION GUIDE
+Play as Expie, Milky or Dune in GTA V Story Mode free roam.
+
+{status}
+
+Read one section at a time. Finish its CHECK before continuing.
+You do not need to write code or use a command window for this guide.
+The downloads contain the avatars only; no filming presets are included.
+
+A. FIND THE RIGHT GTA FOLDER
+
+1. Close GTA if it is running.
+2. Find your installed GTA game in the launcher you normally use.
+   Steam: Library > right-click the game > Manage > Browse local files.
+   You can also use Properties > Installed Files > Browse.
+   Epic: Library > the three dots beside GTA > Manage > the folder icon
+   beside Installation. If your version has different labels, look for its
+   installation location and open that location in Windows File Explorer.
+   Rockstar: Settings > your GTA under My installed games > View installation
+   folder. The exact wording can differ between launcher versions.
+3. Look for {exe} in the folder that opens.
+   This is your GAME FOLDER. Every time this guide says 'game folder', it means
+   this exact folder, not Documents, Downloads, scripts or the desktop shortcut.
+4. If you cannot see .exe at the end of filenames, enable filename extensions:
+   Windows 11: File Explorer > View > Show > File name extensions.
+   Windows 10: File Explorer > View > tick File name extensions.
+5. Check the edition before copying anything:
+      GTA5.exe          = Legacy -> use the Legacy download and guide.
+      GTA5_Enhanced.exe = Enhanced -> use the Enhanced download and guide.
+   Do not install both downloads into the same game folder.
+6. Keep this File Explorer window open. Copy its folder address into Notepad
+   if you want an easy way to find it again.
+
+CHECK: You can see {exe}. You know where your game folder is.
+
+B. UNPACK THE MOD AND KEEP A BACKUP
+
+7. In Downloads, right-click the CU Avatars ZIP for your edition.
+8. Choose Extract All, then Extract. Open the extracted folder.
+   If another folder called CU Avatars is inside, open that too.
+   You should now see INSTALLATION GUIDE.txt and a folder called Game folder.
+   Work from this extracted folder, not from inside the ZIP window.
+9. On your desktop, create a folder named GTA mod backup.
+10. If your game already has mods, copy its existing mods/update/update.rpf
+    into that backup folder. Also back up existing CUAvatars.asi and
+    CUAvatars.ini if you are updating this mod. Copy; do not move the originals.
+    If these files do not exist yet, skip this step. That is normal on a first
+    installation. Do not replace an existing modded update.rpf with a fresh one.
+
+Small glossary:
+  ZIP = a download that must be extracted before use.
+  Copy = select an item, press Ctrl+C, open the destination, press Ctrl+V.
+  Game folder = the folder containing {exe}.
+  mods folder = a folder inside the game folder holding modified copies.
+  .rpf = a GTA archive; use the named GTA tool to open it, not Notepad.
+  .xml = a text file. This guide will say explicitly if you need to edit one.
+
+C. SET STORY MODE TO RUN WITHOUT BATTLEYE
+
+11. Open Rockstar Games Launcher and click Settings.
+12. Find the BattlEye checkbox in its settings and untick it for Story Mode.
+    If your launcher does not offer the checkbox, use Rockstar's instructions
+    for your platform at the support link near the end of this guide.
+    Steam alternative: right-click GTA in Library > Properties > General.
+    In Launch Options, add -nobattleye (keep existing options; separate with a space).
+13. Use Story Mode when playing with this mod. Do not enter GTA Online.
+    Turning BattlEye back on does not uninstall mods. Before returning Online,
+    remove/disable your mod installation as well, following the removal section.
+
+D. INSTALL SCRIPT HOOK V (THE FILES THAT RUN THE MOD)
+
+14. Open https://www.dev-c.com/gtav/scripthookv/ in your browser.
+15. Use the Download link on that page, not Download SDK. The SDK is for
+    developers and is not the player download.
+16. Extract that download to its own folder, just as you extracted the mod.
+17. Open its readme. Use the files it identifies for your GTA edition. If the
+    download separates Legacy and Enhanced folders, choose {edition}.
+18. Open its bin folder (or the edition-specific folder described in its readme).
+19. Copy ScriptHookV.dll into your GAME FOLDER beside {exe}.
+20. Copy the ASI loader supplied for that edition into the same game folder.
+    The official general installation page calls this dinput8.dll. If your
+    downloaded Enhanced readme names a different loader, use that file instead.
+    Do not rename it or install a second loader from another download.
+21. Leave NativeTrainer.asi out. CU Avatars has its own menu and does not need it.
+    If NativeTrainer was already installed, it can compete for the F-key controls.
+    Close GTA and move it to your backup folder if you do not need that trainer.
+
+CHECK: ScriptHookV.dll and ONE compatible ASI loader sit beside {exe}.
+If the latest Script Hook V does not support your installed GTA update, stop
+here until its author releases support. Reinstalling CU Avatars will not fix that.
+
+'''
+legacy='''E. INSTALL OPENIV AND PREPARE THE MODS FOLDER
+
+22. Download OpenIV from https://openiv.com/ and run its installer.
+23. Open OpenIV. Select Grand Theft Auto V, then Windows.
+24. When asked for the game location, browse to the Legacy game folder from
+    section A. Select the folder containing GTA5.exe and finish setup.
+25. In OpenIV, open Tools > ASI Manager.
+26. Install OpenIV.asi. Check that ASI Loader is installed too. If you already
+    copied dinput8.dll in section D, you already supplied the loader; do not
+    add a second loader with a different filename. Close ASI Manager.
+27. In OpenIV's file list, open update, then update.rpf.
+28. If you do not already have mods/update/update.rpf, choose Copy to mods folder
+    when OpenIV offers it. Enable Edit mode if needed to reveal that prompt.
+    If a mods copy already exists, use Show in mods folder/open that copy instead.
+29. Confirm OpenIV is now showing the copy under mods/update/update.rpf.
+    All following installation changes belong in mods, not the original archive.
+
+CHECK: The game folder now has mods/update/update.rpf, and OpenIV.asi is installed.
+
+F. INSTALL THE THREE AVATAR MODELS
+
+30. In OpenIV, choose Tools > Package Installer.
+31. Browse to your extracted CU Avatars download from section B.
+32. Select CU Avatars - Models.oiv, then Open.
+    Select Models, NOT Remove Models. Windows may show it as an OIV file.
+33. In the package window, click Install.
+34. Select the mods folder when asked where to install.
+    Do not select the game folder/original-files option.
+35. Confirm the installation and wait until OpenIV reports it has finished.
+    If it reports an error, stop and keep the exact message; don't continue
+    as if the models were installed.
+
+CHECK: The Models installer reports success. It handles the model archive,
+the game's add-on list, and the required metadata capacity setting for you.
+You do not need to edit XML or download a separate gameconfig for this installer.
+
+G. COPY THE AVATAR MENU AND SOUNDS
+
+36. Return to the extracted CU Avatars download in Windows File Explorer.
+37. Open its Game folder. Select these THREE items:
+       CUAvatars.asi       (a file)
+       CUAvatars.ini       (a file)
+       CUAvatars          (a folder containing sounds)
+38. Copy all three into your actual game folder beside GTA5.exe.
+    Copy the contents, not the parent folder named Game folder.
+    If updating, replace our ASI. Keep an existing customized INI if desired.
+
+Your folder should now look like this (other GTA files are normal):
+
+    Your GTA Legacy folder/
+        GTA5.exe
+        ScriptHookV.dll
+        dinput8.dll
+        OpenIV.asi
+        CUAvatars.asi
+        CUAvatars.ini
+        CUAvatars/
+            sounds/
+                bark1.wav, bark2.wav, bark3.wav, bark4.wav
+                whine1.wav, whine2.wav
+        mods/
+            update/
+                update.rpf
+                x64/
+                    dlcpacks/
+                        cuavatars/
+                            dlc.rpf
+
+CHECK: CUAvatars.asi is NEXT TO GTA5.exe, not inside scripts or mods.
+The sounds folder has six WAV files. The cuavatars folder contains dlc.rpf.
+
+'''
+enhanced='''E. INSTALL OPENRPF (LOADS THE AVATAR MODEL FILES)
+
+22. Open the OpenRPF author's download page:
+    https://www.gta5-mods.com/tools/openrpf-openiv-asi-for-gta-v-enhanced
+23. Download the current release and extract it to its own folder.
+24. Read its included installation notes for your GTA Enhanced version.
+25. Copy OpenRPF.asi into the game folder beside GTA5_Enhanced.exe.
+    Use the loader you installed in section D. If this OpenRPF download also
+    contains a loader, do not add it as a second loader. Follow the authors'
+    current compatibility notes if your downloaded versions differ.
+    Do not copy Legacy OpenIV.asi or RageOpenV into Enhanced.
+
+CHECK: OpenRPF.asi and ScriptHookV.dll sit beside GTA5_Enhanced.exe.
+
+F. COPY THE AVATAR MOD
+
+26. Open Game folder inside your extracted CU Avatars Enhanced download.
+27. Select its FOUR items:
+       CUAvatars.asi       (a file)
+       CUAvatars.ini       (a file)
+       CUAvatars          (a folder containing sounds)
+       mods               (a folder containing the model pack)
+28. Copy these into your actual Enhanced game folder beside GTA5_Enhanced.exe.
+    Copy the contents, not the parent folder named Game folder.
+    Windows can merge the mods folder with an existing mods folder. This pack
+    supplies its own cuavatars/dlc.rpf, not an entire update.rpf.
+    If updating, replace our ASI. Keep an existing customized INI if desired.
+29. If you installed the older CU filming preview, move CUPhotoStage.asi and
+    CUPhotoStage.ini out of THIS game folder to your backup folder.
+    The current download does not need them.
+
+G. MAKE A MODIFIABLE COPY OF ENHANCED'S FILE LIST ARCHIVE
+
+30. In the game folder, open mods, then update.
+31. If update.rpf is already there, keep it. You backed it up in section B.
+    Skip to step 35. Overwriting it could remove settings for your other mods.
+32. If it is missing, return to the game folder and open its original update folder.
+33. Select update.rpf and press Ctrl+C. Do not select update2.rpf.
+34. Go to the game folder's mods/update folder and press Ctrl+V. Wait for the
+    copy to finish; this file can be large. Use this Enhanced installation's
+    archive, never one from Legacy or from another person's download.
+
+CHECK: Both paths exist, and you will edit ONLY the second one:
+    Your Enhanced folder/update/update.rpf       <- original: leave alone
+    Your Enhanced folder/mods/update/update.rpf  <- copy: edit this one
+
+H. REGISTER THE AVATARS - EXPORT ONE SMALL TEXT FILE
+
+35. Get a current CodeWalker build with Enhanced support from the author's
+    project and its linked releases community:
+    https://github.com/dexyfex/CodeWalker
+    https://discord.gg/codewalker
+    Follow the project's release link/instructions, then extract the downloaded
+    application. Do not use GitHub's Download ZIP source-code button.
+    A correct application download contains CodeWalker.RPFExplorer.exe.
+36. Run CodeWalker.RPFExplorer.exe. If asked for a GTA folder, choose your
+    Enhanced folder containing GTA5_Enhanced.exe.
+    Menu labels below are from the project's RPF Explorer; releases may vary.
+37. Use File > Open Folder if necessary to browse your Enhanced game folder.
+38. In RPF Explorer, open mods > update > update.rpf > common > data.
+    Confirm 'mods' is in the archive path BEFORE editing anything.
+39. On your desktop, create a folder named CU Avatar Install.
+40. In RPF Explorer, find dlclist.xml in that common/data folder.
+41. Right-click dlclist.xml and choose Extract Raw. Save it in CU Avatar Install.
+    We use Extract Raw because this file is already ordinary XML text.
+42. In Windows File Explorer, open CU Avatar Install.
+43. Copy dlclist.xml into your GTA mod backup folder as an extra backup.
+44. Back in CU Avatar Install, right-click dlclist.xml > Open with > Notepad.
+    Double-clicking might open a browser; use Open with to choose Notepad instead.
+
+I. ADD ONE LINE, THEN PUT THE FILE BACK
+
+45. In Notepad, press Ctrl+F, type cuavatars, and search.
+    If an entry for dlcpacks:/cuavatars/ already exists inside Paths, do NOT
+    add another. Close Notepad and continue at step 54 to check the metadata limit.
+46. Otherwise, find the line </Paths> near the bottom of the document.
+47. Put the cursor just BEFORE that closing line. Add a new line containing:
+
+        <Item>dlcpacks:/cuavatars/</Item>
+
+    Keep every existing Item line. Keep </Paths> and the closing line below it.
+    The ending should have this arrangement (the dots below are an explanation,
+    not text to type into the file):
+
+        ...all your existing Item lines stay here...
+        <Item>dlcpacks:/cuavatars/</Item>
+      </Paths>
+    </SMandatoryPacksData>
+
+48. Press Ctrl+S to save the existing file. Close Notepad.
+    Its name must still be dlclist.xml, NOT dlclist.xml.txt.
+49. Return to RPF Explorer at mods/update/update.rpf/common/data.
+50. Enable Edit mode. If asked to allow editing, confirm only after checking
+    that this is the mods copy of the archive.
+51. Choose Edit > Import Raw. Select the edited dlclist.xml from CU Avatar Install.
+    This is ordinary text, so use Import Raw, NOT Import XML conversion.
+52. Confirm replacement of dlclist.xml if asked. If the tool asks to convert
+    archive encryption to OPEN for editing, do so only for this backed-up MODS
+    archive. OpenRPF supports OPEN archives. Never do this to the original file.
+53. Check that the file inside common/data is named dlclist.xml. Extract it
+    again into a NEW temporary folder, open it in Notepad, and check that the
+    cuavatars Item line is there exactly once. This confirms your edit is
+    inside the game archive, not merely saved on the desktop.
+54. Keep RPF Explorer open at mods/update/update.rpf/common/data.
+
+I-2. MAKE ROOM FOR THE EXTRA AVATARS (REQUIRED)
+
+Enhanced's default metadata limit filled up during our first loading test.
+Change only the setting below in YOUR Enhanced configuration. Do not download
+or copy a complete Legacy gameconfig file.
+
+55. In the same common/data folder, find gameconfig.xml.
+56. Right-click it > Extract Raw. Save it in CU Avatar Install, then copy this
+    exported file into your GTA mod backup folder before editing.
+57. Open the copy in CU Avatar Install with Notepad.
+58. Press Ctrl+F and search for MetaDataStore. Find this entry:
+        <PoolName>MetaDataStore</PoolName>
+        <PoolSize value="3200" />
+59. Change ONLY that entry's PoolSize number from 3200 to 4000:
+        <PoolName>MetaDataStore</PoolName>
+        <PoolSize value="4000" />
+    Your existing number may differ. If it is below 4000, use 4000. If it is
+    already 4000 or higher, keep it. Do not change other pools or numbers.
+    If MetaDataStore appears in multiple pool entries, apply this minimum to
+    each of those entries. If you cannot find it, stop and ask for help.
+60. Press Ctrl+S and close Notepad. Keep the filename gameconfig.xml.
+61. In RPF Explorer, with Edit mode enabled, use Edit > Import Raw to import
+    your edited gameconfig.xml into mods/update/update.rpf/common/data.
+    Confirm replacement of gameconfig.xml, not dlclist.xml.
+62. Extract gameconfig.xml again to a NEW temporary folder and check its
+    MetaDataStore value is at least 4000. This confirms the archive was updated.
+63. Close RPF Explorer.
+
+CHECK: The MODS archive's dlclist.xml contains the cuavatars entry exactly once,
+and its gameconfig.xml has MetaDataStore set to at least 4000.
+No PowerShell command or supplied Patch-DlcList.ps1 helper is needed for this path.
+If CodeWalker cannot read the Enhanced archive, stop and check that you have an
+Enhanced-capable release and selected the correct game folder. Do not substitute
+a Legacy archive or copy an entire downloaded gameconfig into Enhanced.
+
+Your folder should now look like this (other GTA files are normal):
+
+    Your GTA Enhanced folder/
+        GTA5_Enhanced.exe
+        ScriptHookV.dll
+        [the compatible ASI loader from section D]
+        OpenRPF.asi
+        CUAvatars.asi
+        CUAvatars.ini
+        CUAvatars/
+            sounds/
+                bark1.wav, bark2.wav, bark3.wav, bark4.wav
+                whine1.wav, whine2.wav
+        mods/
+            update/
+                update.rpf
+                x64/
+                    dlcpacks/
+                        cuavatars/
+                            dlc.rpf
+
+'''
+ending='''J. START PLAYING
+
+1. Start the correct GTA edition through your normal launcher.
+2. Select STORY MODE. Wait until you can control your character.
+3. Go into ordinary free roam, outside a mission or cutscene.
+4. Press F5. If your keyboard uses F5 for brightness/media, try Fn+F5.
+5. Use the Up/Down arrow keys to choose Expie, Milky or Dune.
+6. Press Enter. Wait for the model to load.
+7. Close the menu with F5 or Backspace before walking, driving or firing.
+8. Walk a few steps. You should now see your chosen avatar.
+9. Press F6 whenever you want the normal protagonist back.
+   F7 briefly closes the avatar's eyes; regular blinking is automatic.
+
+Before saving, or starting a story mission/replay: press F6 and wait until
+Michael, Franklin or Trevor is visible. Save as that normal character.
+Choose an avatar again with F5 after loading your game.
+
+The mod is for free roam. It does not replace the story cast or other NPCs.
+Blinking and tail sway pause while the phone is held and resume after you put
+it away. That is expected. Hurt sounds are included; breathing stays human.
+The intended death flow keeps your avatar visible through WASTED, uses GTA's
+normal hospital respawn, then returns to your avatar. Enhanced still needs an
+in-game avatar/respawn test; Legacy has had successful local play tests.
+
+K. IF SOMETHING DOES NOT WORK
+
+F5 does nothing:
+  - Try Fn+F5, and make sure you are in free roam with GTA focused.
+  - Check CUAvatars.asi is beside the correct game .exe, not in a nested
+    'Game folder', scripts or mods folder.
+  - Check ScriptHookV.dll and the correct ASI loader are there too.
+  - Check another trainer is not already using F5. NativeTrainer.asi is not needed.
+  - Restart GTA after copying files; it loads these plugins when it starts.
+
+The menu opens, but says a model is missing or cannot load:
+  - The menu files loaded, but the avatar model pack may not have loaded.
+  - Check mods/update/x64/dlcpacks/cuavatars/dlc.rpf exists.
+  - Legacy: repeat the Models.oiv installation into the MODS folder and check
+    OpenIV.asi is installed. Keep the installer error if it fails.
+  - Enhanced: check OpenRPF.asi and section I's final extracted dlclist.xml.
+    Editing a desktop copy without importing it does not register the models.
+
+Script Hook V says 'unknown game version' or 'unsupported game version':
+  - Get a compatible update from its official page. This can happen after GTA
+    updates. If support is not yet available, wait for it before using this mod.
+
+GTA crashes after installation:
+  - Close GTA. Check you did not mix Legacy and Enhanced downloads/dependencies.
+  - Temporarily move CUAvatars.asi to your desktop to disable the avatar script.
+    This alone does NOT unload the DLC models. To disable the whole pack, use
+    section L as well. Do not delete random game files to experiment.
+  - If asking for help, send your GTA edition, the exact error, the step that
+    failed, and a screenshot of the game folder with filenames visible.
+    Include ScriptHookV.log and CUAvatars.recovery.log if they exist in that folder.
+  - Enhanced is a preview: correct installation cannot guarantee it will run
+    without bugs. Its actual in-game appearance and stability are not verified.
+
+No custom hurt sounds:
+  - Open CUAvatars/sounds in your game folder and check all six WAVs are present.
+  - Check Windows has the intended audio output selected and GTA is not muted.
+
+Windows asks to replace files:
+  - Updating this mod can replace its own files. Back them up first.
+  - Keep a customized CUAvatars.ini if you want to retain its settings.
+  - Do not overwrite an existing mods/update/update.rpf with a fresh archive;
+    it may contain other mods' registrations.
+
+L. REMOVE CU AVATARS
+
+1. If GTA runs, press F6 to return to a normal protagonist before saving.
+2. Close GTA completely.
+{uninstall}
+4. In your game folder, remove CUAvatars.asi, CUAvatars.ini and the CUAvatars
+   folder containing the supplied sounds. You can move them to your desktop
+   backup instead of deleting them. Keep logs if you are troubleshooting.
+5. Keep other mods and their files. Do not delete the entire mods folder or a
+   loader used by other mods. These steps remove CU Avatars only; a modded
+   installation is not made GTA Online-ready just by removing this one mod.
+
+UPDATING FROM AN OLDER CU AVATARS DOWNLOAD
+Close GTA, back up your CU files, then follow this guide for the SAME edition.
+Use the new model pack as well as the new ASI; don't update just one half.
+If you previously installed the filming helper, move CUPhotoStage.asi and
+CUPhotoStage.ini out of this game folder to remove its filming menus/cameras.
+
+HELPFUL LINKS / CREDITS
+Script Hook V author: https://www.dev-c.com/gtav/scripthookv/
+OpenIV author (Legacy): https://openiv.com/?p=1132
+OpenRPF author (Enhanced):
+https://www.gta5-mods.com/tools/openrpf-openiv-asi-for-gta-v-enhanced
+CodeWalker author: https://github.com/dexyfex/CodeWalker
+Rockstar's BattlEye / Story Mode FAQ:
+https://support.rockstargames.com/articles/1nenwhZlVrJY6CTFeSS2Fx/grand-theft-auto-online-battleye-faq
+
+Guide checked against the package and available tool documentation on 9 November
+2026. Tool menus and supported GTA versions can change; dependency readmes take
+priority if their current installation instructions differ.
+Keep Credits.txt and Asset permissions.txt with the mod. The download is free.
+'''
+for edition in ['Legacy','Enhanced']:
+ status=('Legacy alpha: locally play-tested; not every vehicle or mod combination\nhas been checked.' if edition=='Legacy' else 'Enhanced PREVIEW: startup and prologue switching tested on Enhanced 1158.16.\nAll three avatars and broader gameplay still need an in-game check.')
+ uninstall=('3. Open OpenIV > Tools > Package Installer. Select CU Avatars - Remove Models.oiv\n   from the extracted download. Install that removal package into the MODS folder.\n   Wait for its success message. It removes this model pack and its list entry.' if edition=='Legacy' else '3. Repeat sections H and I to extract the MODS archive\'s dlclist.xml. In Notepad,\n   remove ONLY <Item>dlcpacks:/cuavatars/</Item>, then import the file back using\n   Import Raw. Remove only mods/update/x64/dlcpacks/cuavatars from the game folder.\n   Keep the remaining DLC entries and other DLC folders.\n   Leave the metadata limit in place if other add-ons use it.')
+ tail=ending.format(uninstall=uninstall)
+ if edition=='Legacy':tail=tail.replace('J. START','H. START').replace('K. IF','I. IF').replace('L. REMOVE','J. REMOVE').replace('section L','section J')
+ text=intro.format(edition=edition,status=status,exe='GTA5.exe' if edition=='Legacy' else 'GTA5_Enhanced.exe')+(legacy if edition=='Legacy' else enhanced)+tail
+ dest=W/'docs/Legacy installation guide.txt' if edition=='Legacy' else W/'enhanced/INSTALLATION GUIDE.txt'
+ dest.write_text(text,encoding='utf-8')
+ print(edition,len(text.split()),'words')

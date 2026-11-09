@@ -1,0 +1,24 @@
+ASSET PERMISSIONS AND DISTRIBUTION
+
+This is a free GTA V singleplayer mod. Do not sell this package or the models,
+put the creators' work behind a paywall, or offer the models as a paid feature.
+
+Akittu permitted Satixfied to use the free downloadable avatars in games/mods
+and media, with Gumroad/Jinxxy product links and Twitter/X and YouTube credits.
+Do not redistribute the original avatar files as supplied by the creator.
+No purchased supporter-pack source files, original Blender files, FBX avatar
+exports, Unity packages or Substance Painter project files are included here.
+
+Sevenscalesdragon permitted a downloadable mod using Dune, with creator links.
+Their stated restriction is no political use. Respect this condition.
+
+The avatar artwork is NOT licensed under the source-code license. The files
+in the custom DLC are converted GTA-specific runtime assets for this mod.
+Permission for this mod does not grant a general license to repackage or resell
+the creators' avatar products. Direct people to the original creators instead.
+The supplied hurt sound clips are also separate from the code license and are
+included as runtime assets for this mod.
+
+These creator permissions do not constitute endorsement or permission from
+Rockstar/Take-Two or a hosting platform. Their separate terms still apply.
+No claim of blanket legal clearance or CurseForge approval is made.

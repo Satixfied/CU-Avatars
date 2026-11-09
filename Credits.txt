@@ -1,0 +1,26 @@
+CREDITS
+
+Concept, creative direction and testing: Satixfied.
+Code and GTA rig/animation adaptation assisted by AI tools.
+Hurt reaction sound clips supplied by Satixfied.
+
+Much love to Akittu for giving permission to use their gorgeous models for
+these mods and videos! Check out their work and show them some love:
+Expie: https://akittu.gumroad.com/l/stylizedexperiment
+Milky: https://akittu.gumroad.com/l/stylizedmilky
+Twitter/X: https://x.com/_akittu
+YouTube: https://www.youtube.com/@akittu
+
+Much love to Sevenscalesdragon for allowing use of their beautiful Dune model!
+Please go support them:
+Dune: https://sevenscalesdragon.gumroad.com/l/SSDstylizedDune
+Twitter/X: https://x.com/Sevenscales_DOU
+
+Casualties: Unknown characters/setting: Orsoniks.
+Grand Theft Auto V: Rockstar Games. This is an unofficial fan modification.
+Runtime dependency: Script Hook V by Alexander Blade (download separately).
+Model installation: OpenIV by the OpenIV Team (download separately).
+Asset build tooling uses CodeWalker by dexyfex as an external dependency.
+
+Retain these credits and links on the mod download page and associated videos.
+Private permission messages/screenshots are not included in the public download.

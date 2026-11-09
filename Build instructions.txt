@@ -1,0 +1,17 @@
+Plugin: download Script Hook V SDK separately. In an x64 Visual Studio Native
+Tools prompt run build.cmd "path to SDK". It uses static MSVC runtime linking.
+Policy regression: cl /EHsc /std:c++17 Test-CosmeticPolicy.cpp, then run the EXE.
+Do not redistribute ScriptHookV.dll, the SDK headers/import library or ASI loader.
+
+AssetTool is an optional .NET8 packing/checking tool. Download CodeWalker source
+separately and respect its terms. Build AssetTool.csproj with
+/p:CodeWalkerCoreProject="path to CodeWalker.Core.csproj".
+No CodeWalker or SharpDX binaries, extracted game keys or SDK files are included.
+Game-ready art is supplied only in the release's custom DLC. Original avatar
+Blender/FBX/Unity/Substance sources and private messages are deliberately absent.
+The DLC metadata templates are included; the artist's asset permissions still apply.
+The private conversion pipeline also uses licensed converted avatar inputs;
+this code archive does not contain the creators' original editable avatar projects.
+The release DLC contains the fitted runtime assets. Extract its custom model RPF
+with OpenIV if you need those binaries for a permitted rebuild, then use AssetTool
+pack with the included DLC metadata. Do not treat the source license as an art license.

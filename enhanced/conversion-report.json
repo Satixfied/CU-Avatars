@@ -1,0 +1,111 @@
+{
+  "target": "GTA V Enhanced",
+  "live_tested": false,
+  "files": [
+    {
+      "file": "cu_dune_faces.ycd",
+      "changed": false,
+      "source_sha256": "3b866cb9453d9c006e8636016d0b3b35e4e36567752b6af63bd0b3e1d950d92f",
+      "sha256": "3b866cb9453d9c006e8636016d0b3b35e4e36567752b6af63bd0b3e1d950d92f",
+      "bytes": 94410
+    },
+    {
+      "file": "cu_dune.ydd",
+      "changed": true,
+      "source_sha256": "8a98e96b5981e93753b6a1606b8fb93f2de9ac5bf5ebded82c53ab457225c3db",
+      "sha256": "00c81f1fabf3fae0dc4888445cd1e5221741c1e9a4789dedff13cc2e1214a12c",
+      "bytes": 4291373
+    },
+    {
+      "file": "cu_dune.yft",
+      "changed": true,
+      "source_sha256": "3bb1f22b0e14bbdb42e28b87d596930063ac50aff29d7475373e664cdfc0db71",
+      "sha256": "17aef4e4c1a02a54bf830171f096c9bf975516e084d3513004c79f14b832666d",
+      "bytes": 13491
+    },
+    {
+      "file": "cu_dune.ymt",
+      "changed": false,
+      "source_sha256": "8ed13c9d85961a14c6843610aecff5304deae387b53e2228a9219c71f0c9c35a",
+      "sha256": "8ed13c9d85961a14c6843610aecff5304deae387b53e2228a9219c71f0c9c35a",
+      "bytes": 1296
+    },
+    {
+      "file": "cu_dune.ytd",
+      "changed": true,
+      "source_sha256": "186e79893562e490e747ec8c5f0c28f8723677db9001732a588475cd2db965b0",
+      "sha256": "53bb43df9a63302e2aa652111ef2aa152f0c378826e6e99d8be6eacace63736e",
+      "bytes": 1481417
+    },
+    {
+      "file": "cu_expie_faces.ycd",
+      "changed": false,
+      "source_sha256": "eda4667f3866ea8ffb0ccc9b0858e0652ae2a71c660c3a5e9e42e713e4298705",
+      "sha256": "eda4667f3866ea8ffb0ccc9b0858e0652ae2a71c660c3a5e9e42e713e4298705",
+      "bytes": 106232
+    },
+    {
+      "file": "cu_expie.ydd",
+      "changed": true,
+      "source_sha256": "be9b138ad24819ceb76a8551cb6b07a36489cc134c4fb8dfd58ee3fe39b129ad",
+      "sha256": "1daf4281c6bbacda47f54e3b54f2f2749c7a18b07441d4443e7f037b6308c90d",
+      "bytes": 4109765
+    },
+    {
+      "file": "cu_expie.yft",
+      "changed": true,
+      "source_sha256": "88269110757dfdf2cfe9d59cef068d811fbadc3f995aa724db123af0602e593c",
+      "sha256": "6995ef76af1e4826027b4eb0fdc92256e5d17ace63f9084ae93a30bb4e881861",
+      "bytes": 12640
+    },
+    {
+      "file": "cu_expie.ymt",
+      "changed": false,
+      "source_sha256": "8ef8c53d8a38a08805d84c168c7a9a750faf081b90408868e5eee0566bce77d0",
+      "sha256": "8ef8c53d8a38a08805d84c168c7a9a750faf081b90408868e5eee0566bce77d0",
+      "bytes": 917
+    },
+    {
+      "file": "cu_expie.ytd",
+      "changed": true,
+      "source_sha256": "0f0064d82bc81930009040f9d8f521b2c26ee94e3a0f0f6c867248e5779dfd38",
+      "sha256": "2573ff2b8fc9aa8c3844eda504b21c862269929fb3215c070e95b486a36089d6",
+      "bytes": 2761533
+    },
+    {
+      "file": "cu_milky_faces.ycd",
+      "changed": false,
+      "source_sha256": "10a3c6212b2ca2ef66ee7bb083fea6bf9fc08fc7640d43d4ef7bdedb6396b954",
+      "sha256": "10a3c6212b2ca2ef66ee7bb083fea6bf9fc08fc7640d43d4ef7bdedb6396b954",
+      "bytes": 100077
+    },
+    {
+      "file": "cu_milky.ydd",
+      "changed": true,
+      "source_sha256": "5eaff93bf1c82e74c629e8d1a9182575972caf2f6911a78a2288cbb077743384",
+      "sha256": "c90bd3e0081392fe5f89597b0f8006be6bb427c8dc696f897152eb2d73b22cfb",
+      "bytes": 3987160
+    },
+    {
+      "file": "cu_milky.yft",
+      "changed": true,
+      "source_sha256": "2e02360ba6bf42ea325cec66f9664b46db97d9541d36543dd0a49b36afde816b",
+      "sha256": "ccd8d1fe9afad9d1b1128fb8fc0c74b0fcbb42f76e5e8535c01f4013f80c522e",
+      "bytes": 12608
+    },
+    {
+      "file": "cu_milky.ymt",
+      "changed": false,
+      "source_sha256": "8a7b26c02c17e0a7bb77159812c443f0dd4f841efea4c33cfc6643633632a1a6",
+      "sha256": "8a7b26c02c17e0a7bb77159812c443f0dd4f841efea4c33cfc6643633632a1a6",
+      "bytes": 1261
+    },
+    {
+      "file": "cu_milky.ytd",
+      "changed": true,
+      "source_sha256": "ec8674ecdb4980477a5bd900f1cebb2ce97dc84cf641713883cca8ea983ef49b",
+      "sha256": "ec347d41caf610b545697c4e258b5f8c071478fc232cab19d3c6a4818706c858",
+      "bytes": 3834705
+    }
+  ]
+}
